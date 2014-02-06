@@ -456,11 +456,6 @@ handlebars.registerHelper('angularMarkup', function(section) {
 
 	var angular;
 
-	if(section.data) angular = section.data.angular;
-	angular = angular || this.angular || false;
-
-	if(!angular) return false;
-
 	return new kss.KssAngular(section).markup();
 
 });
