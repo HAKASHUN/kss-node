@@ -456,7 +456,8 @@ handlebars.registerHelper('angularMarkup', function(section) {
 
 	var angular;
 
-	return new kss.KssAngular(section).markup();
+  return '<div>Hello Angular!!</div>';
+	//return new kss.KssAngular(section).markup();
 
 });
 
