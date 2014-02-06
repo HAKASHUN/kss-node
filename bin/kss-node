@@ -450,6 +450,19 @@ handlebars.registerHelper('modifierMarkup', function(modifier) {
 });
 
 /**
+ * Outputs a angular markup, if possible.
+ */
+handlebars.registerHelper('angularMarkup', function(angular) {
+	if (!angular) {
+		return false;
+	}
+  return new handlebars.SafeString(
+    angular
+  );
+
+});
+
+/**
  * Quickly avoid escaping strings
  * @param  {String} arg The unescaped HTML
  */
