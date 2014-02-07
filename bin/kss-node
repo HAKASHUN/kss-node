@@ -456,10 +456,12 @@ handlebars.registerHelper('angularMarkup', function(section) {
 
 	var angular;
 
-	if(section.data) angular = section.data.angular;
-	angular = angular || this.angular || false;
+	//if(section.data) angular = section.data.angular;
+	//angular = angular || this.angular || false;
 
-	if(!angular) return false;
+	//if(!angular) return false;
+
+  console.log(section);
 
   return new handlebars.SafeString(
     new kss.KssAngular(section).markup()
