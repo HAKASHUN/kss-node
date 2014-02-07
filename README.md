@@ -1,5 +1,10 @@
 # kss-node [![Build Status](https://secure.travis-ci.org/hughsk/kss-node.png?branch=master)](http://travis-ci.org/hughsk/kss-node)
 
+## Custom for Angular JS
+
+This kss-node can use 'Angular:' Annotation!!!
+
+
 This is a NodeJS implementation of [Knyle Style Sheets](https://github.com/kneath/kss) (KSS), "a documentation syntax for CSS". Beyond that, it's intended to have syntax readable by humans *and* machines - hence, this module can be used to create a "living styleguide". The methodology and ideas behind Knyle Style Sheets are contained in [the specification](https://github.com/kneath/kss/blob/master/SPEC.md).
 
 There's an example project in the [demo directory](https://github.com/hughsk/kss-node/tree/master/demo) of this repo.
