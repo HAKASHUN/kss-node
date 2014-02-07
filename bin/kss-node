@@ -452,19 +452,12 @@ handlebars.registerHelper('modifierMarkup', function(modifier) {
 /**
  * Outputs a angular markup, if possible.
  */
-handlebars.registerHelper('angularMarkup', function(section) {
+handlebars.registerHelper('angularToMarkup', function(markup) {
 
-	var angular;
-
-	//if(section.data) angular = section.data.angular;
-	//angular = angular || this.angular || false;
-
-	//if(!angular) return false;
-
-  console.log(section);
+  markup = (markup)? markup : '';
 
   return new handlebars.SafeString(
-    new kss.KssAngular(section).markup()
+    markup
   );
 
 });
